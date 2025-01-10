@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--El charset me permite utilizar caracteres especiales-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <!--Estilo css-->
+    <link rel="stylesheet" href="Estilos/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <!--Cabecera-->
+        <div>
+            <header>
+                <h1>Kuroki</h1> <!--Titulo principal-->
+                <nav>
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#sobrenosotros" class="nav-link">Sobre Nosotros</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                    <a href="https://kuroki.top/" class="nav-link">Portafolio</a>
+                    <a href="#calendario" class="nav-link">Calendario</a>
+                </nav>
+            </header>
+        </div>
+        <!--Fin Header-->
+
+
+        <!--Contenido principal-->
+        <div>
+            <section id="Inicio">
+                <h2>Bienvenido a mi portafolio 2025</h2>
+                <p>Los proyectos más esperados del año</p>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Imagenes/carusel3.jpeg" alt="web1" >
+                        <img src="Imagenes/carusel1.jpeg" alt="web2" >
+                        <img src="Imagenes/carusel2.jpeg" alt="web3" >
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)"> ←</button>
+                    <button class="carousel-btn next" onclick="moveSlide(1)"> →</button>
+                </div>
+            </section>
+            <!--Fin de Contenido Principal-->
+
+
+            <!--Sobre Nosotros-->
+            <section id="sobrenosotros" class="section">
+                <h2>Proyectos desarollados</h2>
+                <ol>
+                    <li>Futbol</li>
+                    <li>Peleas</li>
+                    <li>Puzzle</li>
+                    <li>Aventura</li>
+                    <li>Guerra</li>
+                </ol>
+            </section>
+            <!--Fin Sobre Nosotros-->
+
+            <!--Calendario de Desarollo-->
+            <section id="calendario" class="section">
+                <h2>Calendario de Desarrollo</h2>
+                <table class="table">
+                    <tr>
+                        <th>Id</th> <!--Titulo de tabla-->
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Categoria</th>
+                        <th>Imagen</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>1985</td>
+                        <td>Mario Bros</td>
+                        <td>Plataformas</td>
+                        <td><img src="Imagenes/Mario.jpg" alt="Mario" style="height: 25px; width: 25px;"></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>2017</td>
+                        <td>Zelda BOTW</td>
+                        <td>Aventuras</td>
+                        <td><img src="Imagenes/botw.jpg" alt="Link" style="height: 25px; width: 25px;"></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>2020</td>
+                        <td>Animal Crossing</td>
+                        <td>Simulación</td>
+                        <td><img src="Imagenes/Animal_Crossing_New_Horizons.jpg" alt="New horison"
+                                style="height: 25px; width: 25px;"></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>2017</td>
+                        <td>Little Nightmares</td>
+                        <td>Survival horror</td>
+                        <td><img src="Imagenes/PESADILLA.webp" alt="11" style="height: 25px; width: 25px;"></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>2015</td>
+                        <td>Undertale</td>
+                        <td>Rol</td>
+                        <td><img src="Imagenes/UNDERTALE.webp" alt="determinacion" style="height: 25px; width: 25px;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>1991</td>
+                        <td>Sonic the Hedgehog</td>
+                        <td>Plataformas</td>
+                        <td><img src="Imagenes/SONIC.jpg" alt="Soy perfecta para ti, sonic?"
+                                style="height: 25px; width: 25px;"></td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>2023</td>
+                        <td>Storyteller</td>
+                        <td>Lógica</td>
+                        <td><img src="Imagenes/STORY.jpg" alt="cuento" style="height: 25px; width: 25px;"></td>
+                    </tr>
+                </table>
+            </section>
+            <!--Fin de calendario-->
+
+            <!--Formulario de contacto-->
+            <section id="Formulario" class="section">
+                <h2>Formulario</h2>
+                <form action="" method="post" class="form">
+
+                    <!--inicio Nombre-->
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Ingrese su Nombre</label>
+                        <div>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
+                        </div>
+                    </div>
+                    <!--Fin nombre-->
+
+
+                    <!--Inicio Correo-->
+                    <div class="form-group">
+                        <label for="email">Ingrese su Correo</label>
+                        <div>
+                            <input type="email" class="form-control" name="email" id="contraseña" placeholder="Ingrese su Correo" required>
+                        </div>
+                    </div>
+                    <!--Fin Correo-->
+
+
+                    <!--Inicio Ubicacion -->
+                    <div class="form-group">
+                        <label for="">Seleccione su Cuidad</label>
+                        <div>
+                            <select name="" id="" class="form-select">
+                                <option value="">Seleccione una opcion</option>
+                                <option value="Quito">Quito</option>
+                                <option value="Cuenca">Cuenca</option>
+                                <option value="Ibarra">Ibarra</option>
+                                <option value="Guayaquil">Guayaquil</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--Fin Ubicacion-->
+
+
+                    <!--direccion-->
+                    <div class="form-group">
+                        <label for="Ingrese Direccion">Ingrese Direccion</label>
+                        <div>
+                            <textarea name="Direccion" id="Direccion" class="form-textarea"></textarea>
+                        </div>
+                    </div>
+                    <!--Fin Direccion-->
+
+
+                    <!--Inicio Check Box-->
+                    <div class="form-group">
+                        <label for="edad">Seleccione su edad</label>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="edad">Menos 18</Em></label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="edad">18-20</Em></label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="edad">20-30</Em></label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="edad">30-40</Em></label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="edad">40-50</Em></label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="edad">60 y más</Em></label>
+                        </div>
+                    </div>
+                    <!--Final del Check Box-->
+
+
+                    <!--Inicio Contraseña-->
+                    <div class="form-group">
+                        <label for="password">Ingrese su Contraseña</label>
+                        <div>
+                            <input type="password" name="password" id="password" placeholder="Ingrese Contraseña"
+                                required>
+                        </div>
+                    </div>
+                    <!--Fin contraseña-->
+
+
+                    <!--Radio Button-->
+                    <div class="form-group">
+                        <input type="radio" name="" id="">
+                        <label for="si" ;>Acepto los Terminos y Condiciones</label>
+                    </div>
+                    <!--Fin de Radio Button-->
+
+
+
+                    <!--Boton submit-->
+                    <div class="form-group">
+                        <input type="submit" value="Enviar" class="form-submit">
+                    </div>
+                    <!--fin Boton-->
+
+                </form>
+            </section>
+            <!--Fin Formulario-->
+        </div>
+    </section>
+
+    <script>
+        //creamos variable para rastrear el indice del slide activo
+        let currentIndex=0;
+
+        //creamos la funcion para que se mueva en la direccion indicada
+        function moveSlide(direction){
+            
+            //seleccionamos todos los elementos de las imagenes dentro del carousel
+            const slides= document.querySelectorAll('.carousel-inner img');
+
+            //obtenemos el numero de imagenes
+            const totalSlide=slides.length;
+
+            //acualizamos el indice actual, sumando la direccion 1 o -1
+            currentIndex += direction;
+
+            //si el indice es -0 vuelve al primero creando un ciclo
+            if (currentIndex <0){
+                currentIndex=totalSlide-1;
+                }
+            
+            //si el indice supera el ultimo slide vuelve al primero
+            if (currentIndex >= totalSlide){
+                currentIndex = 0;
+            }
+
+            //calculamos el desplasamiento
+            const offset =-currentIndex *100;
+
+            //aplicamos el desplazamiento
+            document.querySelector ('.carousel-inner').style.transform=  `translateX(${offset}%)`;
+        }
+
+        //Configuramos el cambio automatico del slide cada 5 segundos
+        setInterval (()=>{
+            //Llama la funcion moveslide
+            moveSlide(1);
+        } , 5000);
+    </script>
+</body>
+</html>
